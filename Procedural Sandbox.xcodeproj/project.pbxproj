@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0026256F2BCD7EDD00F3FA4E /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 0026256E2BCD7EDD00F3FA4E /* RealityKitContent */; };
+		002625712BCD7EDD00F3FA4E /* Procedural_SandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002625702BCD7EDD00F3FA4E /* Procedural_SandboxApp.swift */; };
+		002625732BCD7EDD00F3FA4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002625722BCD7EDD00F3FA4E /* ContentView.swift */; };
+		002625752BCD7EDD00F3FA4E /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002625742BCD7EDD00F3FA4E /* ImmersiveView.swift */; };
+		002625772BCD7EE000F3FA4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002625762BCD7EE000F3FA4E /* Assets.xcassets */; };
+		0026257A2BCD7EE000F3FA4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002625792BCD7EE000F3FA4E /* Preview Assets.xcassets */; };
+		002625852BCD7EE000F3FA4E /* Procedural_SandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002625842BCD7EE000F3FA4E /* Procedural_SandboxTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		002625812BCD7EE000F3FA4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 002625612BCD7EDD00F3FA4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 002625682BCD7EDD00F3FA4E;
+			remoteInfo = "Procedural Sandbox";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002625692BCD7EDD00F3FA4E /* Procedural Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Procedural Sandbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0026256D2BCD7EDD00F3FA4E /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		002625702BCD7EDD00F3FA4E /* Procedural_SandboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Procedural_SandboxApp.swift; sourceTree = "<group>"; };
+		002625722BCD7EDD00F3FA4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		002625742BCD7EDD00F3FA4E /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		002625762BCD7EE000F3FA4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		002625792BCD7EE000F3FA4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0026257B2BCD7EE000F3FA4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002625802BCD7EE000F3FA4E /* Procedural SandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Procedural SandboxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		002625842BCD7EE000F3FA4E /* Procedural_SandboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Procedural_SandboxTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		002625662BCD7EDD00F3FA4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0026256F2BCD7EDD00F3FA4E /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0026257D2BCD7EE000F3FA4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		002625602BCD7EDD00F3FA4E = {
+			isa = PBXGroup;
+			children = (
+				0026256B2BCD7EDD00F3FA4E /* Procedural Sandbox */,
+				0026256C2BCD7EDD00F3FA4E /* Packages */,
+				002625832BCD7EE000F3FA4E /* Procedural SandboxTests */,
+				0026256A2BCD7EDD00F3FA4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0026256A2BCD7EDD00F3FA4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				002625692BCD7EDD00F3FA4E /* Procedural Sandbox.app */,
+				002625802BCD7EE000F3FA4E /* Procedural SandboxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0026256B2BCD7EDD00F3FA4E /* Procedural Sandbox */ = {
+			isa = PBXGroup;
+			children = (
+				002625702BCD7EDD00F3FA4E /* Procedural_SandboxApp.swift */,
+				002625722BCD7EDD00F3FA4E /* ContentView.swift */,
+				002625742BCD7EDD00F3FA4E /* ImmersiveView.swift */,
+				002625762BCD7EE000F3FA4E /* Assets.xcassets */,
+				0026257B2BCD7EE000F3FA4E /* Info.plist */,
+				002625782BCD7EE000F3FA4E /* Preview Content */,
+			);
+			path = "Procedural Sandbox";
+			sourceTree = "<group>";
+		};
+		0026256C2BCD7EDD00F3FA4E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				0026256D2BCD7EDD00F3FA4E /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		002625782BCD7EE000F3FA4E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				002625792BCD7EE000F3FA4E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		002625832BCD7EE000F3FA4E /* Procedural SandboxTests */ = {
+			isa = PBXGroup;
+			children = (
+				002625842BCD7EE000F3FA4E /* Procedural_SandboxTests.swift */,
+			);
+			path = "Procedural SandboxTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		002625682BCD7EDD00F3FA4E /* Procedural Sandbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002625882BCD7EE000F3FA4E /* Build configuration list for PBXNativeTarget "Procedural Sandbox" */;
+			buildPhases = (
+				002625652BCD7EDD00F3FA4E /* Sources */,
+				002625662BCD7EDD00F3FA4E /* Frameworks */,
+				002625672BCD7EDD00F3FA4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Procedural Sandbox";
+			packageProductDependencies = (
+				0026256E2BCD7EDD00F3FA4E /* RealityKitContent */,
+			);
+			productName = "Procedural Sandbox";
+			productReference = 002625692BCD7EDD00F3FA4E /* Procedural Sandbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0026257F2BCD7EE000F3FA4E /* Procedural SandboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0026258B2BCD7EE000F3FA4E /* Build configuration list for PBXNativeTarget "Procedural SandboxTests" */;
+			buildPhases = (
+				0026257C2BCD7EE000F3FA4E /* Sources */,
+				0026257D2BCD7EE000F3FA4E /* Frameworks */,
+				0026257E2BCD7EE000F3FA4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				002625822BCD7EE000F3FA4E /* PBXTargetDependency */,
+			);
+			name = "Procedural SandboxTests";
+			productName = "Procedural SandboxTests";
+			productReference = 002625802BCD7EE000F3FA4E /* Procedural SandboxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		002625612BCD7EDD00F3FA4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					002625682BCD7EDD00F3FA4E = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					0026257F2BCD7EE000F3FA4E = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 002625682BCD7EDD00F3FA4E;
+					};
+				};
+			};
+			buildConfigurationList = 002625642BCD7EDD00F3FA4E /* Build configuration list for PBXProject "Procedural Sandbox" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 002625602BCD7EDD00F3FA4E;
+			productRefGroup = 0026256A2BCD7EDD00F3FA4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				002625682BCD7EDD00F3FA4E /* Procedural Sandbox */,
+				0026257F2BCD7EE000F3FA4E /* Procedural SandboxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		002625672BCD7EDD00F3FA4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0026257A2BCD7EE000F3FA4E /* Preview Assets.xcassets in Resources */,
+				002625772BCD7EE000F3FA4E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0026257E2BCD7EE000F3FA4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		002625652BCD7EDD00F3FA4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002625732BCD7EDD00F3FA4E /* ContentView.swift in Sources */,
+				002625712BCD7EDD00F3FA4E /* Procedural_SandboxApp.swift in Sources */,
+				002625752BCD7EDD00F3FA4E /* ImmersiveView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0026257C2BCD7EE000F3FA4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002625852BCD7EE000F3FA4E /* Procedural_SandboxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		002625822BCD7EE000F3FA4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 002625682BCD7EDD00F3FA4E /* Procedural Sandbox */;
+			targetProxy = 002625812BCD7EE000F3FA4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		002625862BCD7EE000F3FA4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Debug;
+		};
+		002625872BCD7EE000F3FA4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Release;
+		};
+		002625892BCD7EE000F3FA4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Procedural Sandbox/Preview Content\"";
+				DEVELOPMENT_TEAM = ZHXH4MD8DA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gabeweinbrenner.Procedural-Sandbox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		0026258A2BCD7EE000F3FA4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Procedural Sandbox/Preview Content\"";
+				DEVELOPMENT_TEAM = ZHXH4MD8DA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gabeweinbrenner.Procedural-Sandbox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		0026258C2BCD7EE000F3FA4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZHXH4MD8DA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gabeweinbrenner.Procedural-SandboxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Procedural Sandbox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Procedural Sandbox";
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Debug;
+		};
+		0026258D2BCD7EE000F3FA4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZHXH4MD8DA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gabeweinbrenner.Procedural-SandboxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Procedural Sandbox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Procedural Sandbox";
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		002625642BCD7EDD00F3FA4E /* Build configuration list for PBXProject "Procedural Sandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002625862BCD7EE000F3FA4E /* Debug */,
+				002625872BCD7EE000F3FA4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		002625882BCD7EE000F3FA4E /* Build configuration list for PBXNativeTarget "Procedural Sandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002625892BCD7EE000F3FA4E /* Debug */,
+				0026258A2BCD7EE000F3FA4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0026258B2BCD7EE000F3FA4E /* Build configuration list for PBXNativeTarget "Procedural SandboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0026258C2BCD7EE000F3FA4E /* Debug */,
+				0026258D2BCD7EE000F3FA4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0026256E2BCD7EDD00F3FA4E /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 002625612BCD7EDD00F3FA4E /* Project object */;
+}
