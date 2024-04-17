@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		0026256F2BCD7EDD00F3FA4E /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 0026256E2BCD7EDD00F3FA4E /* RealityKitContent */; };
 		002625712BCD7EDD00F3FA4E /* Procedural_SandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002625702BCD7EDD00F3FA4E /* Procedural_SandboxApp.swift */; };
-		002625732BCD7EDD00F3FA4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002625722BCD7EDD00F3FA4E /* ContentView.swift */; };
-		002625752BCD7EDD00F3FA4E /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002625742BCD7EDD00F3FA4E /* ImmersiveView.swift */; };
+		002625752BCD7EDD00F3FA4E /* RealityKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002625742BCD7EDD00F3FA4E /* RealityKitView.swift */; };
 		002625772BCD7EE000F3FA4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002625762BCD7EE000F3FA4E /* Assets.xcassets */; };
 		0026257A2BCD7EE000F3FA4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002625792BCD7EE000F3FA4E /* Preview Assets.xcassets */; };
 		002625852BCD7EE000F3FA4E /* Procedural_SandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002625842BCD7EE000F3FA4E /* Procedural_SandboxTests.swift */; };
+		00E0A7432BCDB2B000AE7EC9 /* Perlin2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0A7422BCDB2B000AE7EC9 /* Perlin2D.swift */; };
+		00E0A7472BCF026200AE7EC9 /* ProceduralGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0A7462BCF026200AE7EC9 /* ProceduralGeneration.swift */; };
+		00E0A7492BCF028800AE7EC9 /* ProceduralEntityGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0A7482BCF028800AE7EC9 /* ProceduralEntityGeneration.swift */; };
+		00E0A74C2BCF04EC00AE7EC9 /* ProceduralConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0A74B2BCF04EC00AE7EC9 /* ProceduralConfigurationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,13 +33,16 @@
 		002625692BCD7EDD00F3FA4E /* Procedural Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Procedural Sandbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0026256D2BCD7EDD00F3FA4E /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		002625702BCD7EDD00F3FA4E /* Procedural_SandboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Procedural_SandboxApp.swift; sourceTree = "<group>"; };
-		002625722BCD7EDD00F3FA4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		002625742BCD7EDD00F3FA4E /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		002625742BCD7EDD00F3FA4E /* RealityKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityKitView.swift; sourceTree = "<group>"; };
 		002625762BCD7EE000F3FA4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		002625792BCD7EE000F3FA4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0026257B2BCD7EE000F3FA4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		002625802BCD7EE000F3FA4E /* Procedural SandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Procedural SandboxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		002625842BCD7EE000F3FA4E /* Procedural_SandboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Procedural_SandboxTests.swift; sourceTree = "<group>"; };
+		00E0A7422BCDB2B000AE7EC9 /* Perlin2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perlin2D.swift; sourceTree = "<group>"; };
+		00E0A7462BCF026200AE7EC9 /* ProceduralGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceduralGeneration.swift; sourceTree = "<group>"; };
+		00E0A7482BCF028800AE7EC9 /* ProceduralEntityGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceduralEntityGeneration.swift; sourceTree = "<group>"; };
+		00E0A74B2BCF04EC00AE7EC9 /* ProceduralConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceduralConfigurationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +86,15 @@
 		0026256B2BCD7EDD00F3FA4E /* Procedural Sandbox */ = {
 			isa = PBXGroup;
 			children = (
+				00E0A7452BCF025600AE7EC9 /* Model */,
+				00E0A7442BCF024800AE7EC9 /* ViewModel */,
+				00E0A74A2BCF04E100AE7EC9 /* View */,
 				002625702BCD7EDD00F3FA4E /* Procedural_SandboxApp.swift */,
-				002625722BCD7EDD00F3FA4E /* ContentView.swift */,
-				002625742BCD7EDD00F3FA4E /* ImmersiveView.swift */,
+				002625742BCD7EDD00F3FA4E /* RealityKitView.swift */,
 				002625762BCD7EE000F3FA4E /* Assets.xcassets */,
 				0026257B2BCD7EE000F3FA4E /* Info.plist */,
 				002625782BCD7EE000F3FA4E /* Preview Content */,
+				00E0A7422BCDB2B000AE7EC9 /* Perlin2D.swift */,
 			);
 			path = "Procedural Sandbox";
 			sourceTree = "<group>";
@@ -112,6 +121,30 @@
 				002625842BCD7EE000F3FA4E /* Procedural_SandboxTests.swift */,
 			);
 			path = "Procedural SandboxTests";
+			sourceTree = "<group>";
+		};
+		00E0A7442BCF024800AE7EC9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				00E0A7482BCF028800AE7EC9 /* ProceduralEntityGeneration.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		00E0A7452BCF025600AE7EC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00E0A7462BCF026200AE7EC9 /* ProceduralGeneration.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00E0A74A2BCF04E100AE7EC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00E0A74B2BCF04EC00AE7EC9 /* ProceduralConfigurationView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,9 +250,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				002625732BCD7EDD00F3FA4E /* ContentView.swift in Sources */,
+				00E0A74C2BCF04EC00AE7EC9 /* ProceduralConfigurationView.swift in Sources */,
+				00E0A7432BCDB2B000AE7EC9 /* Perlin2D.swift in Sources */,
+				00E0A7492BCF028800AE7EC9 /* ProceduralEntityGeneration.swift in Sources */,
 				002625712BCD7EDD00F3FA4E /* Procedural_SandboxApp.swift in Sources */,
-				002625752BCD7EDD00F3FA4E /* ImmersiveView.swift in Sources */,
+				00E0A7472BCF026200AE7EC9 /* ProceduralGeneration.swift in Sources */,
+				002625752BCD7EDD00F3FA4E /* RealityKitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

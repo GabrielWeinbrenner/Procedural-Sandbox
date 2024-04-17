@@ -9,13 +9,16 @@ import SwiftUI
 
 @main
 struct Procedural_SandboxApp: App {
+    @StateObject var proceduralEntity = ProceduralEntityGeneration()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ProceduralConfigurationView()
+                .environmentObject(proceduralEntity)
         }
 
         ImmersiveSpace(id: "ImmersiveSpace") {
-            ImmersiveView()
+            RealityKitView()
+                .environmentObject(proceduralEntity)
         }
     }
 }
