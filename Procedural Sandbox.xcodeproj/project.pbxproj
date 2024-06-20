@@ -16,7 +16,8 @@
 		00E0A7432BCDB2B000AE7EC9 /* Perlin2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0A7422BCDB2B000AE7EC9 /* Perlin2D.swift */; };
 		00E0A7472BCF026200AE7EC9 /* ProceduralGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0A7462BCF026200AE7EC9 /* ProceduralGeneration.swift */; };
 		00E0A7492BCF028800AE7EC9 /* ProceduralEntityGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0A7482BCF028800AE7EC9 /* ProceduralEntityGeneration.swift */; };
-		00E0A74C2BCF04EC00AE7EC9 /* ProceduralConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0A74B2BCF04EC00AE7EC9 /* ProceduralConfigurationView.swift */; };
+		00E0A74C2BCF04EC00AE7EC9 /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0A74B2BCF04EC00AE7EC9 /* ConfigurationView.swift */; };
+		00E0A7502BCFFFEE00AE7EC9 /* CGSize+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0A74F2BCFFFEE00AE7EC9 /* CGSize+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,8 @@
 		00E0A7422BCDB2B000AE7EC9 /* Perlin2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perlin2D.swift; sourceTree = "<group>"; };
 		00E0A7462BCF026200AE7EC9 /* ProceduralGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceduralGeneration.swift; sourceTree = "<group>"; };
 		00E0A7482BCF028800AE7EC9 /* ProceduralEntityGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceduralEntityGeneration.swift; sourceTree = "<group>"; };
-		00E0A74B2BCF04EC00AE7EC9 /* ProceduralConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceduralConfigurationView.swift; sourceTree = "<group>"; };
+		00E0A74B2BCF04EC00AE7EC9 /* ConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
+		00E0A74F2BCFFFEE00AE7EC9 /* CGSize+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +88,11 @@
 		0026256B2BCD7EDD00F3FA4E /* Procedural Sandbox */ = {
 			isa = PBXGroup;
 			children = (
+				00E0A74D2BCFFFC600AE7EC9 /* Extensions */,
 				00E0A7452BCF025600AE7EC9 /* Model */,
 				00E0A7442BCF024800AE7EC9 /* ViewModel */,
 				00E0A74A2BCF04E100AE7EC9 /* View */,
 				002625702BCD7EDD00F3FA4E /* Procedural_SandboxApp.swift */,
-				002625742BCD7EDD00F3FA4E /* RealityKitView.swift */,
 				002625762BCD7EE000F3FA4E /* Assets.xcassets */,
 				0026257B2BCD7EE000F3FA4E /* Info.plist */,
 				002625782BCD7EE000F3FA4E /* Preview Content */,
@@ -142,9 +144,18 @@
 		00E0A74A2BCF04E100AE7EC9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				00E0A74B2BCF04EC00AE7EC9 /* ProceduralConfigurationView.swift */,
+				002625742BCD7EDD00F3FA4E /* RealityKitView.swift */,
+				00E0A74B2BCF04EC00AE7EC9 /* ConfigurationView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		00E0A74D2BCFFFC600AE7EC9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				00E0A74F2BCFFFEE00AE7EC9 /* CGSize+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E0A74C2BCF04EC00AE7EC9 /* ProceduralConfigurationView.swift in Sources */,
+				00E0A74C2BCF04EC00AE7EC9 /* ConfigurationView.swift in Sources */,
 				00E0A7432BCDB2B000AE7EC9 /* Perlin2D.swift in Sources */,
+				00E0A7502BCFFFEE00AE7EC9 /* CGSize+Extensions.swift in Sources */,
 				00E0A7492BCF028800AE7EC9 /* ProceduralEntityGeneration.swift in Sources */,
 				002625712BCD7EDD00F3FA4E /* Procedural_SandboxApp.swift in Sources */,
 				00E0A7472BCF026200AE7EC9 /* ProceduralGeneration.swift in Sources */,

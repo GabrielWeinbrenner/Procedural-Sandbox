@@ -9,26 +9,51 @@ import Foundation
 import RealityKit
 
 class ProceduralEntityGeneration: ObservableObject {
-    @Published private var proceduralGenerationEntity: Entity = Entity()
-    @Published var octaves: Double = 2 {
-        didSet {
-            proceduralGeneration.setOctaves(to: Int(octaves))
+    private var updateDebounceTimer: Timer?
+    
+    private func debounceUpdate() {
+        updateDebounceTimer?.invalidate()
+        updateDebounceTimer = Timer.scheduledTimer(withTimeInterval: 0.002, repeats: false) { [weak self] _ in
+            self?.updateTerrainEntity()
         }
     }
-    @Published var persistence: Double = 0.25 {
+    
+    @Published private var proceduralGenerationEntity: Entity = Entity()
+    @Published var octaves: Float {
+        didSet {
+            proceduralGeneration.setOctaves(to: octaves)
+        }
+    }
+    @Published var persistence: Float {
         didSet {
             proceduralGeneration.setPersistance(to: persistence)
         }
     }
-    @Published var perlinScale: Float = 50 {
+    @Published var perlinScale: Float {
         didSet {
             proceduralGeneration.setPerlinScale(to: perlinScale)
+        }
+    }
+    @Published var lacunarity: Float {
+        didSet {
+            proceduralGeneration.setLacunarity(to: lacunarity)
+        }
+    }
+    
+    @Published var xOffset: Float {
+        didSet {
+            proceduralGeneration.setXOffset(to: xOffset)
+        }
+    }
+    @Published var yOffset: Float {
+        didSet {
+            proceduralGeneration.setYOffset(to: yOffset)
         }
     }
 
     @Published private var proceduralGeneration: ProceduralGeneration {
         didSet {
-            updateTerrainEntity()
+            debounceUpdate()
         }
     }
     private var landscapeMaterial: ShaderGraphMaterial? = nil {
@@ -37,7 +62,15 @@ class ProceduralEntityGeneration: ObservableObject {
         }
     }
     init() {
-        self.proceduralGeneration = ProceduralGeneration()
+        let newProceduralGeneration = ProceduralGeneration()
+        self.proceduralGeneration = newProceduralGeneration
+        
+        self.persistence = newProceduralGeneration.persistance
+        self.perlinScale = newProceduralGeneration.perlinScale
+        self.lacunarity = newProceduralGeneration.lacunarity
+        self.octaves = newProceduralGeneration.octaves
+        self.yOffset = newProceduralGeneration.xOffset
+        self.xOffset = newProceduralGeneration.yOffset
         updateTerrainEntity()
 
     }
@@ -61,10 +94,24 @@ class ProceduralEntityGeneration: ObservableObject {
         let terrainHeights = proceduralGeneration.getTerrainHeights()
         
         let mesh = generateTerrain(width: terrainSize, height: terrainSize, terrainHeights: terrainHeights)
+        
         if let material = landscapeMaterial {
+            let container: ShapeResource = .generateConvex(from: mesh)
+            
             proceduralGenerationEntity.components[ModelComponent.self] = ModelComponent(mesh: mesh, materials: [material])
+            proceduralGenerationEntity.components[CollisionComponent.self] = CollisionComponent(shapes: [container])
+            
+            proceduralGenerationEntity.components.set(InputTargetComponent(allowedInputTypes: .indirect))
+            
+            let material = PhysicsMaterialResource.generate(friction: 0.8, restitution: 0.0)
+            proceduralGenerationEntity.components.set(PhysicsBodyComponent(shapes: [container] ,
+                                                       mass: 0.0,
+                                                       material: material,
+                                                       mode: .dynamic))
+
         } else {
             proceduralGenerationEntity.components[ModelComponent.self] = ModelComponent(mesh: mesh, materials: [UnlitMaterial(color: .brown)])
+            proceduralGenerationEntity.components[CollisionComponent.self] = CollisionComponent(shapes: [.generateBox(size: .init(repeating: Float(terrainSize/100)))])
 
         }
     }
@@ -79,7 +126,7 @@ class ProceduralEntityGeneration: ObservableObject {
                 let index = y * width + x
                 let position = SIMD3<Float>(Float(x) * scale, terrainHeights[index], Float(y) * scale)
                 vertices.append(position)
-                normals.append(SIMD3<Float>(0, 1, 0))
+                normals.append(SIMD3<Float>(1, 1, 1))
             }
         }
                                

@@ -12,7 +12,7 @@ struct Procedural_SandboxApp: App {
     @StateObject var proceduralEntity = ProceduralEntityGeneration()
     var body: some Scene {
         WindowGroup {
-            ProceduralConfigurationView()
+            ConfigurationView()
                 .environmentObject(proceduralEntity)
         }
 

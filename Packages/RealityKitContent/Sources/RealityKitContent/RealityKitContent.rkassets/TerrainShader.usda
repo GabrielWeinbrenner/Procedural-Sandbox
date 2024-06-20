@@ -102,18 +102,6 @@ def Material "TerrainShader"
         int ui:nodegraph:node:stackingOrder = 1195
     }
 
-    def Shader "UnlitSurface"
-    {
-        uniform token info:id = "ND_realitykit_unlit_surfaceshader"
-        color3f inputs:color.connect = </TerrainShader/Mix_1.outputs:out>
-        bool inputs:hasPremultipliedAlpha
-        float inputs:opacity
-        token outputs:out
-        float2 ui:nodegraph:node:pos = (507.83572, -325.9154)
-        float2 ui:nodegraph:node:size = (195, 181)
-        int ui:nodegraph:node:stackingOrder = 1193
-    }
-
     def Shader "middle_layer"
     {
         uniform token info:id = "ND_realitykit_step_float"
@@ -136,6 +124,55 @@ def Material "TerrainShader"
         float2 ui:nodegraph:node:pos = (-221.45062, -104.026405)
         float2 ui:nodegraph:node:size = (129, 127)
         int ui:nodegraph:node:stackingOrder = 1276
+    }
+
+    def Shader "PreviewSurface"
+    {
+        uniform token info:id = "ND_UsdPreviewSurface_surfaceshader"
+        float inputs:clearcoatRoughness
+        color3f inputs:diffuseColor.connect = None
+        color3f inputs:emissiveColor
+        float inputs:ior
+        float inputs:metallic
+        float inputs:occlusion
+        float inputs:opacity
+        float inputs:roughness = 1
+        token outputs:out
+        float2 ui:nodegraph:node:pos = (1138.1589, -329.2662)
+        float2 ui:nodegraph:node:size = (160, 307)
+        int ui:nodegraph:node:stackingOrder = 1338
+        string[] ui:nodegraph:realitykit:node:attributesShowingChildren = ["inputs:metallic", "Advanced", "inputs:clearcoat", "outputs:out", "inputs:clearcoat"]
+    }
+
+    def Shader "UnlitSurface"
+    {
+        uniform token info:id = "ND_realitykit_unlit_surfaceshader"
+        bool inputs:applyPostProcessToneMap
+        color3f inputs:color.connect = </TerrainShader/Mix_1.outputs:out>
+        bool inputs:hasPremultipliedAlpha
+        float inputs:opacity
+        float inputs:opacityThreshold
+        token outputs:out
+        float2 ui:nodegraph:node:pos = (558.56757, -401.88196)
+        float2 ui:nodegraph:node:size = (195, 181)
+        int ui:nodegraph:node:stackingOrder = 1354
+        string[] ui:nodegraph:realitykit:node:attributesShowingChildren = ["inputs:applyPostProcessToneMap"]
+    }
+
+    def Shader "PBRSurface"
+    {
+        uniform token info:id = "ND_realitykit_pbr_surfaceshader"
+        color3f inputs:baseColor.connect = </TerrainShader/Mix_1.outputs:out>
+        float inputs:clearcoatRoughness
+        color3f inputs:emissiveColor
+        bool inputs:hasPremultipliedAlpha
+        float3 inputs:normal
+        float inputs:roughness = 1
+        token outputs:out
+        float2 ui:nodegraph:node:pos = (668.45447, -79.748726)
+        float2 ui:nodegraph:node:size = (167, 307)
+        int ui:nodegraph:node:stackingOrder = 1350
+        string[] ui:nodegraph:realitykit:node:attributesShowingChildren = ["inputs:ambientOcclusion"]
     }
 }
 

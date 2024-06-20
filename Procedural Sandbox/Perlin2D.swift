@@ -9,7 +9,23 @@ import Foundation
 
 public class Perlin2D: NSObject {
     var permutation:[Int] = []
-    
+    var octaveOffsets: [(x: Float, y: Float)] = []
+
+    public init(seed: String, octaves: Int, offset: (Float, Float)) {
+        let hash = seed.hash
+        srand48(hash)
+        for _ in 0..<512 {
+            permutation.append(Int(drand48() * 255))
+        }
+
+        // Generate random offsets for each octave
+        for _ in 0..<octaves {
+            let offsetX = Float(Int(drand48() * 200000) - 100000) + offset.0 // Generates values from -100000 to 100000
+            let offsetY = Float(Int(drand48() * 200000) - 100000) + offset.1
+            octaveOffsets.append((x: offsetX, y: offsetY))
+        }
+    }
+
     
     public init(seed: String) {
         

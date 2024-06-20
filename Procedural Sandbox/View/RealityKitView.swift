@@ -10,7 +10,28 @@ import RealityKit
 import RealityKitContent
 
 struct RealityKitView: View {
+    typealias CGOfsset = CGSize
+
     @EnvironmentObject var proceduralEntity: ProceduralEntityGeneration
+    
+
+    @State private var pan: CGOfsset = .zero
+    @GestureState private var gesturePan: CGOfsset = .zero
+    private var panGesture: some Gesture {
+        DragGesture()
+            .onChanged { value in
+                let xOffsetChange = Float(value.translation3D.x / 10000)
+                let yOffsetChange = Float(value.translation3D.y / 10000)
+                proceduralEntity.xOffset += xOffsetChange
+                proceduralEntity.yOffset += yOffsetChange
+            }
+            .onEnded { value in
+                pan += value.translation
+                proceduralEntity.xOffset += Float(value.translation3D.x / 10000)
+                proceduralEntity.yOffset += Float(value.translation3D.y / 10000)
+            }
+    }
+
     var rootEntity = Entity()
     var body: some View {
         RealityView { content, attachments in
@@ -38,7 +59,10 @@ struct RealityKitView: View {
         .gesture(SpatialTapGesture()
             .targetedToAnyEntity()
             .onEnded({ targetValue in
+                print(targetValue)
             }))
+        .gesture(panGesture
+            .targetedToEntity(proceduralEntity.getTerrainEntity()))
         .onAppear() {
             // Appear happens before realitykit scene controller init
         }
