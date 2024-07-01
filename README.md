@@ -1,6 +1,10 @@
 # 🌍 Procedural Sandbox 🌍
 
 Welcome to Procedural Sandbox, a project developed in Swift using RealityKit. This application features dynamic procedural generation of terrains, allowing you to explore and interact with an ever-changing world. Perfect for creating immersive environments and experimenting with procedural content.
+## Screenshots 📷
+![2024-07-01 at 11 54 20](https://github.com/GabrielWeinbrenner/Procedural-Sandbox/assets/13935725/38e9b32a-e9ef-4c84-b92c-5613c0ce36b3)
+
+![2024-07-01 at 11 58 32](https://github.com/GabrielWeinbrenner/Procedural-Sandbox/assets/13935725/132dc077-4af6-44ca-910a-737ad9e0af86)
 
 ## Features ✨
 
